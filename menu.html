@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+</head>
+<style>
+    *{  
+    margin:0;  
+    padding:0;  
+}  
+#nav{  
+    background-color: rgb(192, 13, 1);  
+    width: 84px;  
+    height: 40px;  
+}  
+ul li{  
+    list-style: none;  
+    float: left;  
+    line-height: 40px;  
+    text-align: center;  
+    position: relative;  
+}  
+a{  
+    padding:0 10px;  
+    text-decoration: none;  
+    color: #000;  
+    display: block; 
+    height:40px;  
+}  
+a:hover{  
+    color: white;  
+    background-color: rgb(248, 16, 16);  
+}  
+ul li ul li{  
+    float: none;  
+    background-color: rgb(240, 13, 13);  
+    margin-top:2px;  
+}  
+ul li ul{  
+    position:absolute;  
+    left: 0;  
+    top:40px;  
+    display: none;  
+}   
+ul li:hover ul{  
+    display: block;  
+}  
+</style>
+<body>  
+    <div id="nav">  
+        <ul>  
+            <li><a href="#">一级菜单</a>  
+                <ul>  
+                    <li><a href="#">二级菜单</a></li>  
+                    <li><a href="#">二级菜单</a></li>  
+                    <li><a href="#">二级菜单</a></li>  
+                    <li><a href="#">二级菜单</a></li>  
+                </ul>  
+            </li>  
+        </ul>  
+    </div>  
+</body>  
+</html>
